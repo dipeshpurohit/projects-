@@ -1,1 +1,1 @@
-https://github.com/dipeshpuroit/projects-.git
+https://github.com/dipeshpurohit/projects-.git
