@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sign up</title>
+<link href="css.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+	background-image: url();
+	background-color: #847FDC;
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="dipesh i like to create web applications with dreamweaver &#128516;">
+<meta name="apple-mobile-web-app-title" content="dipesh">
+<meta name="application-name" content="dipesh">
+<meta name="theme-color" content="#5096d6">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dipesh">
+<meta name="twitter:title" content="&#128017; dipesh">
+<meta name="twitter:description" content="&#128524; I enjoy breaking stuff that aint mine :) &#128579;">
+<meta name="twitter:creator" content="@dipeshUK_">
+<meta name="twitter:image" content="https://s.gravatar.com/avatar/3e3cc6b89e388d6db8a7b57c3418beef?s=512">
+ 
+<meta property="og:title" content="&#128017; dipesh"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://www.dipesh.uk/"/>
+<meta property="og:image" content="https://s.gravatar.com/avatar/3e3cc6b89e388d6db8a7b57c3418beef?s=512"/>
+<meta property="og:description" content="&#128524; i like to make website :) &#128579;"/>
+</head>
+
+<body onLoad="MM_preloadImages('images/contact us 2.png','images/about us 2.png','images/payment 2.png','images/shop 2.png')">
+<label><label></label></label><div id="css">
+<div id="banner"><span class="images"><img src="images/banner.png" width="983" height="147" alt=""/></span></div>
+  <div id="buttons"><a href="templete.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/home 2.png',0)"><img src="images/home 1.png" alt="images" width="199" height="83" id="Image2"></a>   <a href="Shop.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','images/shop 2.png',1)"><img src="images/shop 1.png" alt="image" width="199" height="83" id="Image32"></a><a href="shop.html"></a> <a href="contact us.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','images/contact us 2.png',1)"><img src="images/contact us 1.png" alt="image" width="199" height="83" id="Image4"></a> <a href="about us.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','images/about us 2.png',1)"><img src="images/about us 1.png" alt="image
+" width="199" height="83" id="Image5">  </a><a href="payment.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','images/payment 2.png',1)">   			 <img src="images/payment 1.png" alt="image" width="199" height="83" id="Image6"></a></div>
+<div class="images">
+  <p>Join membership today</p>
+  <p>
+    <label for="textfield">Full name:</label>
+    <input type="text" name="textfield" id="textfield">
+  </p>
+  <p>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+  </p>
+  <p>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password">
+  </p>
+  <p>
+    <input type="submit" name="submit" id="submit" value="Sign up" onClick="formValidate()">
+  </p>
+  <table width="170" height="70" border="0" align="left">
+    <tbody>
+      <tr>
+        <td width="87" height="26"><a href="https://twitter.com/login"><img src="images for pages/Twitter_logo.png" alt="" width="76" height="62" align="middle"/></a></td>
+        <td width="73"><a href="https://www.youtube.com/results?search_query=computer+hardware"></a></td>
+      </tr>
+    </tbody>
+  </table> 
+</div>
+<script>
+function formValidate(){
+	var msg = "";
+	if (document.getElementById("textfield").value == "")
+		msg += 'You need a name\n';
+	if (document.getElementById("email").value == "")
+		msg += 'You need a Email\n';
+	if (document.getElementById("password").value == "")
+		msg += 'You need a password\n';
+	alert(msg+ "Sign up fail") ;
+}
+</script>
+</body>
+</html>
